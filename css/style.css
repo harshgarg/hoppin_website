@@ -535,7 +535,7 @@ p.et{
     font-size: 16px;
     padding: 13px 0;
     width: 30%;
-    background: #E1A20C;
+    background: #28A9A4;
     font-family: 'Oswald', sans-serif;
     border: none;
     transition: .5s all;
@@ -549,7 +549,7 @@ p.et{
 }
 .contact-left h3{
 	font-size: 2em;
-    color:#E1A20C;
+    color:#28A9A4;
     font-family: 'Oswald', sans-serif;
     margin: 0 0 1em;
 }
