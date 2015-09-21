@@ -228,7 +228,7 @@ select.arrival {
 /*-- //banner --*/
 /*-- news --*/
 .news{
-	background:url(../images/banner.jpg) no-repeat 0px 0px;
+	background:url(../images/account.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -239,7 +239,7 @@ select.arrival {
 }
 .news-info{
 	width:60%;
-	background:rgba(223, 168, 11, 0.57);
+	background:rgba(40,169,164, 0.57);
 	padding:5em 3em;
 }
 .news-info h3{
