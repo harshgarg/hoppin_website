@@ -17,16 +17,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-
-
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.scrollify.min.js"></script>
+<script>
+			$(document).ready(function(){
+			$.scrollify({
+        section : "section",
+        sectionName : "section-name",
+        easing: "easeOutExpo",
+        scrollSpeed: 1100,
+        offset : 0,
+        scrollbars: true,
+        before:function() {},
+        after:function() {},
+        afterResize:function() {}
+    });
+	});
+			
+			</script>
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Helvetica+Neue">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
 <style>
 .collection-item{
 -webkit-font-smoothing: antialiased;
@@ -45,13 +61,32 @@ padding-top: 13px;
 width: 392.5px;
 }
 p{
-font-family: 'Helvetica Neue',sans-serif;
+font-family: 'open Sans',sans-serif;
 font-size:20px;
 }
 .heading{
 color:#28A9A4;
 font-family: MuseoSansRounded-500,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+.myButton {
+	-moz-box-shadow:inset 0px 39px 0px -24px #28A9A4;
+	-webkit-box-shadow:inset 0px 39px 0px -24px #28A9A4;
+	box-shadow:inset 0px 39px 0px -24px #28A9A4;
+	background-color:#28A9A4;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #28A9A4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #28A9A4;
+}
+
 
 
 </style>
@@ -80,6 +115,7 @@ $('.scrolly').scrolly();
 	
 <body>
 <!-- header -->
+<section>
 	<div class="header" >	
 			<div class="logo" >
 			   <a href="index.html"><img height="50px" src="images/logo.png" ></a>
@@ -113,16 +149,16 @@ $('.scrolly').scrolly();
 						</script>
 						<!-- /script-for-menu -->
 			</div>
-			<div class="search-box wow slideInLeft">
+			<div class="search-box">
 				<div id="sb-search" class="sb-search">
 					<form>
-						<input class="sb-search-input" placeholder="Enter your search term..." value="Enter your search term..." type="search" name="search" id="search">
+						<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
 						<input class="sb-search-submit" type="submit" value="">
 						<span class="sb-icon-search"> </span>
 					</form>
 				</div>
 			</div>
-					<!-- search-scripts -->
+			<!-- search-scripts -->
 					<script src="js/classie.js"></script>
 					<script src="js/uisearch.js"></script>
 						<script>
@@ -148,19 +184,19 @@ $('.scrolly').scrolly();
 					<ul class="slides">
 						<li>
 							<div class="banner-info">
-								<h1>Memorable experiences through creative event planning and management. </h1>
+								<p style="font-size:20px;">HoppIn strives to bring spontaneity and ease to going out in some of the most exciting events in the city </p>
 								
 							</div>
 						</li> 
 						<li>
 							<div class="banner-info">
-								<h1>Discover the capital’s biggest and best clubbing events</h1>
+								<p style="font-size:20px;">HoppIn aims to provide the best experience based on your location and enhance social media marketing platform</p>
 								
 							</div>
 						</li>
 						<li>
 							<div class="banner-info">
-								<h1>We uncover the best events every day so you can get out and Live Your City </h1>
+								<p style="font-size:20px;">Discover anything from a ticketed event to invitation only events and explore city's best kept secrets</p>
 								
 							</div>
 						</li>
@@ -182,6 +218,7 @@ $('.scrolly').scrolly();
 			  </script>
 		</div>
 	</div>
+	</section>
 <!-- //banner -->
 <!-- welcome -->
 	<section class="welcome" id="nightlife" >
@@ -196,7 +233,22 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;" >NightLife</h3>
         <br>
-        <p style="min-height:150px;">this is NightLife event</p>
+        <p style="min-height:50px;">this is NightLife event</p>
+		<p style="min-height:50px;"> 
+		Genre - Football<br>
+		
+		Rating  -  
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star"></span>
+</p>
+<p style="min-height:50px;">
+<a href="#" class="myButton">Invite</a>
+<a href="#" class="myButton">Book</a>
+<a href="#" class="myButton">Share</a>
+</p>
         </div>
     </div>
   </div>
@@ -207,7 +259,22 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;;" >Conferences</h3>
         <br>
-        <p style="min-height:150px;">this is conference event</p>
+        <p style="min-height:50px;">this is conference event</p>
+		<p style="min-height:50px;"> 
+		Genre - Football<br>
+		
+		Rating  -  
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star"></span>
+</p>
+<p style="min-height:50px;">
+<a href="#" class="myButton">Invite</a>
+<a href="#" class="myButton">Book</a>
+<a href="#" class="myButton">Share</a>
+</p>
         </div>
     </div>
   </div>
@@ -218,7 +285,22 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;;" >Festivals</h3>
         <br>
-        <p style="min-height:150px;">this is festival event</p>
+        <p style="min-height:50px;">this is festival event</p>
+		<p style="min-height:50px;"> 
+		Genre - Football<br>
+		
+		Rating  -  
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star"></span>
+</p>
+<p style="min-height:50px;">
+<a href="#" class="myButton">Invite</a>
+<a href="#" class="myButton">Book</a>
+<a href="#" class="myButton">Share</a>
+</p>
         </div>
     </div>
   </div>
@@ -230,7 +312,22 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;;" >Sports</h3>
        <br>
-        <p style="min-height:150px;">this is sport event</p>
+        <p style="min-height:50px;">this is sport event. </p>
+		<p style="min-height:50px;"> 
+		Genre - Football<br>
+		
+		Rating  -  
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star"></span>
+</p>
+<p style="min-height:50px;">
+<a href="#" class="myButton">Invite</a>
+<a href="#" class="myButton">Book</a>
+<a href="#" class="myButton">Share</a>
+</p>
         </div>
     </div>
   </div>
@@ -241,7 +338,22 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;;" >Concert</h3>
         <br>
-        <p style="min-height:150px;">this is concert event</p>
+        <p style="min-height:50px;">this is concert event</p>
+		<p style="min-height:50px;"> 
+		Genre - Football<br>
+		
+		Rating  -  
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star"></span>
+</p>
+<p style="min-height:50px;">
+<a href="#" class="myButton">Invite</a>
+<a href="#" class="myButton">Book</a>
+<a href="#" class="myButton">Share</a>
+</p>
         </div>
     </div>
   </div>
@@ -252,7 +364,22 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;;" >Arts</h3>
 		<br>
-        <p style="min-height:150px;">this is art event</p>
+        <p style="min-height:50px;">this is art event</p>
+		<p style="min-height:50px;"> 
+		Genre - Football<br>
+		
+		Rating  -  
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
+  <span class="glyphicon glyphicon-star"></span>
+</p>
+<p style="min-height:50px;">
+<a href="#" class="myButton">Invite</a>
+<a href="#" class="myButton">Book</a>
+<a href="#" class="myButton">Share</a>
+</p>
         </div>
     </div>
   </div>
@@ -260,29 +387,30 @@ $('.scrolly').scrolly();
 </section>
 
 
-<div class="services" id="about">
+<section class="services" id="about">
 		<div class="container">
 			<h3 class="wow fadeInDown">ABOUT US</h3>
 			<div class="line ser">
 			</div>
-			<div class="col-md-6 wow slideInLeft">
-			<img src="images/aboutus.jpg">
+			
+			<div class="col-md-6 wow slideInLeft"><center>
+			<img src="images/aboutus.jpg"></center>
 			</div>
 			<div class="col-md-6 wow slideInRight" >
 			<br><br>
 			<p>
-			HoppIn is a mobile-first redefining event discovery ,networking and booking platform .Users are presented with a curated list of things to do ,including last minute events ,which can be booked directly on the App.<br>
-It is the element of curation , highlighting different events for each user that can be booked ,from a few hours away ,to months in advance .<br>
-It has full coverage and a large range ,but highlights the very best up front .The absence of too much choice makes the consumer buy more rather than less.If you have 100 events you would be less likely to go to one because you would overwhelmed by choice .<br>
-Events are selected by hand and advanced personalized algorithms .Things like Facebook likes ,the users location ,browsing history ,browsing behavior ,tag selection and the browsing history of their friends affect which events are highlighted .<br>
+			HoppIn is a mobile-first redefining event discovery, networking and booking platform .Users are presented with a curated list of things to do ,including last minute events, which can be booked directly on the App.<br>
+It is the element of curation, highlighting different events for each user that can be booked, from a few hours away, to months in advance .<br>
+It has full coverage and a large range, but highlights the very best up front .The absence of too much choice makes the consumer buy more rather than less.If you have 100 events you would be less likely to go to one because you would overwhelmed by choice .<br>
+Events are selected by hand and advanced personalized algorithms .Things like Facebook likes, the users location, browsing history, browsing behavior, tag selection and the browsing history of their friends affect which events are highlighted .<br>
 
 			</p>
 			</div>
 				<div class="clearfix"> </div>
 			</div>
-		</div>
+		</section>
 		
-<div class="services" id="features">
+<section class="services" id="features">
 		<div class="container">
 			<h3 class="wow fadeInUpBig">OUR FEATURES</h3>
 			<div class="line ser">
@@ -306,19 +434,19 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 			</div>
 				<div class="clearfix"> </div>
 			</div>
-		</div>
+		</section>
 	
 	
 
 <!-- team -->
-	<div class="team" id="team">
+	<section class="team" id="team">
 		<div class="container">
 			<h3 class="wow fadeInUpBig">Meet Our Team</h3>
 			<div class="line tem">
 			</div>
 			<p class="et"></p>
 			<div class="team-grids">
-				<div class="col-md-4 team-grid">
+				<div class="col-md-4 team-grid wow slideInLeft">
 					<img src="images/5.png" alt=" " class="img-responsive" />
 					<h4>Siddharth Lenka <span>Cheif Member</span></h4>
 					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
@@ -332,7 +460,7 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-4 team-grid">
+				<div class="col-md-4 team-grid wow slideInUp">
 					<img src="images/6.png" alt=" " class="img-responsive" />
 					<h4>Andrew Micheal <span>Cheif Member</span></h4>
 					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
@@ -346,7 +474,7 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-4 team-grid">
+				<div class="col-md-4 team-grid wow slideInRight">
 					<img src="images/7.png" alt=" " class="img-responsive" />
 					<h4>Laura Williums <span>Cheif Member</span></h4>
 					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
@@ -363,19 +491,19 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</div>
+	</section>
 <!-- //team -->
 <!-- services -->
-	<div class="services" id="services">
+	<section class="services" id="services">
 		<div class="container">
-			<h3>Our Services</h3>
+			<h3 class="wow slideInUpBig">Our Services</h3>
 			<div class="line ser">
 			</div>
 		<!--	<p class="et">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
 				consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt 
 				ut labore et dolore magnam aliquam quaerat voluptatem.</p> -->
 			<div class="services-grids">
-				<div class="col-md-4 services-grid">
+				<div class="col-md-4 services-grid wow fadeInLeft">
 					<a href="#"><div class="para">
 						<span class="glyphicon glyphicon-home" aria-hidden="true"></span><p style="font-size:25px;">
 						
@@ -383,7 +511,7 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 						
 					</div></a>
 				</div>
-				<div class="col-md-4 services-grid">
+				<div class="col-md-4 services-grid wow fadeInUpBig">
 					<a href="#"><div class="para">
 						<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
 						<p style="font-size:25px;">
@@ -391,8 +519,8 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 						WORK WITH US</p>
 					</div></a>
 				</div>
-				<div class="col-md-4 services-grid">
-					<a href="#"><div class="para">
+				<div class="col-md-4 services-grid wow fadeInRight">
+					<a href="faq.html"><div class="para">
 						<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
 						<p style="font-size:25px;">
 						
@@ -402,18 +530,18 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</div>
+	</section>
 <!-- //services -->
 <!-- news -->
-	<div class="news" id="news">
+	<section class="news" id="news">
 		<div class="news-info">
-			<h3>Accounts</h3>
+			<h3 class="wow fadeInUpBig">Accounts</h3>
 			<div class="news-grids">
 				<div class="news-grid">
-					<div class="news-grid-left">
+					<div class="news-grid-left wow slideInLeft">
 						<p>Personal <span>Account</span></p>
 					</div>
-					<div class="news-grid-right">
+					<div class="news-grid-right wow slideInLeft">
 						<h4>qui dolorem eum fugiat quo voluptas nulla pariatur</h4>
 						<p>But who has any right to find fault with a man who chooses to 
 							enjoy a pleasure that has no annoying consequences, or one who avoids 
@@ -422,10 +550,10 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 					<div class="clearfix"> </div>
 				</div>
 				<div class="news-grid">
-					<div class="news-grid-left">
+					<div class="news-grid-left wow slideInLeft">
 						<p>Business <span>Account</span></p>
 					</div>
-					<div class="news-grid-right">
+					<div class="news-grid-right wow slideInLeft">
 						<h4>qui dolorem eum fugiat quo voluptas nulla pariatur</h4>
 						<p>But who has any right to find fault with a man who chooses to 
 							enjoy a pleasure that has no annoying consequences, or one who avoids 
@@ -434,10 +562,10 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 					<div class="clearfix"> </div>
 				</div>
 				<div class="news-grid">
-					<div class="news-grid-left">
+					<div class="news-grid-left wow slideInLeft">
 						<p>5th <span>April</span></p>
 					</div>
-					<div class="news-grid-right">
+					<div class="news-grid-right wow slideInLeft">
 						<h4>qui dolorem eum fugiat quo voluptas nulla pariatur</h4>
 						<p>But who has any right to find fault with a man who chooses to 
 							enjoy a pleasure that has no annoying consequences, or one who avoids 
@@ -447,22 +575,22 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 <!-- //news -->
 <!-- contact -->
-	<div class="contact" id="contact">
+	<section class="contact" id="contact">
 		<div class="container">
 			<div class="col-md-5 contact-left">
-				<h3>CONTACT US</h3>
-				<p>Siddharth Lenka
-					<span>BITS Pilani Hyderabad Campus</span></p>
-				<ul>
+				<h3 class="wow slideInUpBig">CONTACT US</h3>
+				<p class="wow slideInLeft">Siddharth Lenka
+					<span class="wow slideInLeft">BITS Pilani Hyderabad Campus</span></p>
+				<ul class="wow slideInLeft">
 					<li>Free Phone :+1 078 4589 2456</li>
 					<li>Telephone :+1 078 4589 2456</li>
 					<li>Fax :+1 078 4589 2456</li>
 					<li><a href="mailto:info@example.com">info@example.com</a></li>
 				</ul>
-				<ul class="social-icons">
+				<ul class="social-icons wow slideInLeft">
 						<li><a href="#" class="facebook"> </a></li>
 						<li><a href="#" class="p"> </a></li>
 						<li><a href="#" class="t"> </a></li>
@@ -483,7 +611,7 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 	</div>
 	<div class="contact-bottom">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.958900464012!2d36.23097800000001!3d49.993379999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f009ab9f07%3A0xa21e10f67fa29ce!2sGeorgia+Education+Center!5e0!3m2!1sen!2sin!4v1436943860334" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
+	</section>
 <!-- //contact -->
 <!-- footer -->
 	<div class="footer">
