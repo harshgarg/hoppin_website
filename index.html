@@ -20,29 +20,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/jquery.scrollify.min.js"></script>
-<script>
-			$(document).ready(function(){
-			$.scrollify({
-        section : "section",
-        sectionName : "section-name",
-        easing: "easeOutExpo",
-        scrollSpeed: 1100,
-        offset : 0,
-        scrollbars: true,
-        before:function() {},
-        after:function() {},
-        afterResize:function() {}
-    });
-	});
-			
-			</script>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>	
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Helvetica+Neue">
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
 <style>
 .collection-item{
 -webkit-font-smoothing: antialiased;
@@ -61,7 +48,7 @@ padding-top: 13px;
 width: 392.5px;
 }
 p{
-font-family: 'open Sans',sans-serif;
+font-family: 'Arvo',sans-serif;
 font-size:20px;
 }
 .heading{
@@ -102,6 +89,9 @@ font-family: MuseoSansRounded-500,"Helvetica Neue",Helvetica,Arial,sans-serif;
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/bootstrap-social.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style1.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 <script>
 $(document).ready(function(){
 $('.scrolly').scrolly();
@@ -116,68 +106,38 @@ $('.scrolly').scrolly();
 <body>
 <!-- header -->
 <section>
-	<div class="header" >	
-			<div class="logo" >
-			   <a href="index.html"><img height="50px" src="images/logo.png" ></a>
-			</div>
-			<div class="top-nav">
-				<span class="menu">Menu</span>
-				<ul class="nav">
-					<b>
-					<li style="margin-left:-100px;"><a class="scrolly" href="#nightlife" data-hover="NIGHTLIFE">NIGHTLIFE</a></li>
-					<li><a class="scrolly" href="#arts" data-hover="ARTS">ARTS</a></li>
-					<li><a class="scrolly" href="#conferences" data-hover="CONFERENCES">CONFERENCES</a></li>
-					<li><a class="scrolly" href="#concert" data-hover="CONCERT">CONCERT</a></li>
-					<li><a class="scrolly" href="#festivals" data-hover="FESTIVALS">FESTIVALS</a></li>
-					<li><a class="scrolly" href="#sports" data-hover="SPORTS">SPORTS</a></li><br></b>
-					<!-- <li style="margin-left:300px; margin-top:50px;"><a class="scrolly" href="#about" data-hover="ABOUT US">ABOUT US</a></li>
-					<li><a class="scrolly" href="#features" data-hover="FEATURES">FEATURES</a></li>
-					<li><a class="scrolly" href="#newshour" data-hover="NEWSHOUR">NEWSHOUR</a></li>
-					<li><a class="scrolly" href="#work-with-us" data-hover="WORK WITH US">WORK WITH US</a></li>
-					<li><a class="scrolly" href="#contact" data-hover="CONTACT">CONTACT</a></li>
-					-->
-					
-				</ul>
-				
-						<!-- script-for-menu -->
-						 <script>
-						   $( "span.menu" ).click(function() {
-							 $( "ul.nav" ).slideToggle( 300, function() {
-							 // Animation complete.
-							  });
-							 });
-						</script>
-						<!-- /script-for-menu -->
-			</div>
-			<div class="search-box">
-				<div id="sb-search" class="sb-search">
-					<form>
-						<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-						<input class="sb-search-submit" type="submit" value="">
-						<span class="sb-icon-search"> </span>
-					</form>
-				</div>
-			</div>
-			<!-- search-scripts -->
-					<script src="js/classie.js"></script>
-					<script src="js/uisearch.js"></script>
-						<script>
-							new UISearch( document.getElementById( 'sb-search' ) );
-						</script>
-					<!-- //search-scripts -->
-			<div class="lang_list" >
-				<select class="arrival">
-					<option>Hyderabad</option>
-					<option>Bangalore</option>
-					<option>Mumbai</option>
-					<option>Delhi</option>
-				</select>
-   			</div>
-			<div class="clearfix"> </div>
-	</div>
-<!-- //header -->
-<!-- banner -->
-	<div class="banner">
+	<header>
+		<div class="cd-logo" style="margin-top:-10px;"><a href="#0"><img height="50px" src="images/logo.png" alt="Logo"></a></div>
+
+		<nav class="cd-main-nav-wrapper">
+			<ul class="cd-main-nav">
+				<li><a href="#0">NIGHTLIFE</a></li>
+				<li><a href="#0">ARTS</a></li>
+				<li><a href="#0">FESTIVALS</a></li>
+				<li><a href="#0">CONFERENCES</a></li>
+				<li><a href="#0">SPORTS</a></li>
+				<li><a href="#0">CONCERTS</a></li>
+				<li>
+					<a href="#0" class="cd-subnav-trigger"><span>Others</span></a>
+
+					<ul>
+						<li class="go-back"><a href="#0">Menu</a></li>
+						<li><a class="scrolly" href="#events">What's Hot</a></li>
+						<li><a class="scrolly" href="#about">About Us</a></li>
+						<li><a class="scrolly" href="#features">Our Features</a></li>
+						<li><a class="scrolly" href="#team">Our Team</a></li>
+						<li><a class="scrolly" href="#services">Our Services</a></li>
+						<li><a class="scrolly" href="#0" class="placeholder">Placeholder</a></li>
+					</ul>
+				</li>
+			</ul> <!-- .cd-main-nav -->
+		</nav> <!-- .cd-main-nav-wrapper -->
+		
+		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+	</header>
+	
+	<main class="cd-main-content">
+		<div class="banner">
 		<div class="container">
 			<section class="slider">
 				<div class="flexslider">
@@ -221,7 +181,7 @@ $('.scrolly').scrolly();
 	</section>
 <!-- //banner -->
 <!-- welcome -->
-	<section class="welcome" id="nightlife" >
+	<section class="welcome" id="events" >
 		<div class="container">
 			<h3 class="heading wow fadeInUpBig" >DISCOVER THE KEY TO HAPPINESS</h3><br>
 			
@@ -233,16 +193,11 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;" >NightLife</h3>
         <br>
-        <p style="min-height:50px;">this is NightLife event</p>
-		<p style="min-height:50px;"> 
+        <p style="min-height:50px; font-family:Arvo,sans-serif;">this is NightLife event</p>
+		<p style="min-height:50px; font-family:Arvo,sans-serif;"> 
 		Genre - Football<br>
 		
-		Rating  -  
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star"></span>
+		
 </p>
 <p style="min-height:50px;">
 <a href="#" class="myButton">Invite</a>
@@ -259,16 +214,11 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;;" >Conferences</h3>
         <br>
-        <p style="min-height:50px;">this is conference event</p>
-		<p style="min-height:50px;"> 
+        <p style="min-height:50px; font-family:Arvo,sans-serif;">this is conference event</p>
+		<p style="min-height:50px; font-family:Arvo,sans-serif;"> 
 		Genre - Football<br>
 		
-		Rating  -  
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star"></span>
+		
 </p>
 <p style="min-height:50px;">
 <a href="#" class="myButton">Invite</a>
@@ -285,16 +235,11 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;;" >Festivals</h3>
         <br>
-        <p style="min-height:50px;">this is festival event</p>
-		<p style="min-height:50px;"> 
+        <p style="min-height:50px; font-family:Arvo,sans-serif;">this is festival event</p>
+		<p style="min-height:50px; font-family:Arvo,sans-serif;"> 
 		Genre - Football<br>
 		
-		Rating  -  
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star"></span>
+		
 </p>
 <p style="min-height:50px;">
 <a href="#" class="myButton">Invite</a>
@@ -312,16 +257,11 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;;" >Sports</h3>
        <br>
-        <p style="min-height:50px;">this is sport event. </p>
-		<p style="min-height:50px;"> 
+        <p style="min-height:50px; font-family:Arvo,sans-serif;">this is sport event. </p>
+		<p style="min-height:50px; font-family:Arvo,sans-serif;"> 
 		Genre - Football<br>
 		
-		Rating  -  
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star"></span>
+		
 </p>
 <p style="min-height:50px;">
 <a href="#" class="myButton">Invite</a>
@@ -338,16 +278,11 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;;" >Concert</h3>
         <br>
-        <p style="min-height:50px;">this is concert event</p>
-		<p style="min-height:50px;"> 
+        <p style="min-height:50px; font-family:Arvo,sans-serif;">this is concert event</p>
+		<p style="min-height:50px; font-family:Arvo,sans-serif;"> 
 		Genre - Football<br>
 		
-		Rating  -  
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star"></span>
+		
 </p>
 <p style="min-height:50px;">
 <a href="#" class="myButton">Invite</a>
@@ -364,16 +299,11 @@ $('.scrolly').scrolly();
       <div class="caption">
         <h3 class="heading" style="font-size:25px;;" >Arts</h3>
 		<br>
-        <p style="min-height:50px;">this is art event</p>
-		<p style="min-height:50px;"> 
+        <p style="min-height:50px; font-family:Arvo,sans-serif;">this is art event</p>
+		<p style="min-height:50px; font-family:Arvo,sans-serif;"> 
 		Genre - Football<br>
 		
-		Rating  -  
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star" style="color:#28A9A4"></span>
-  <span class="glyphicon glyphicon-star"></span>
+		
 </p>
 <p style="min-height:50px;">
 <a href="#" class="myButton">Invite</a>
@@ -398,11 +328,11 @@ $('.scrolly').scrolly();
 			</div>
 			<div class="col-md-6 wow slideInRight" >
 			<br><br>
-			<p>
-			HoppIn is a mobile-first redefining event discovery, networking and booking platform .Users are presented with a curated list of things to do ,including last minute events, which can be booked directly on the App.<br>
-It is the element of curation, highlighting different events for each user that can be booked, from a few hours away, to months in advance .<br>
-It has full coverage and a large range, but highlights the very best up front .The absence of too much choice makes the consumer buy more rather than less.If you have 100 events you would be less likely to go to one because you would overwhelmed by choice .<br>
-Events are selected by hand and advanced personalized algorithms .Things like Facebook likes, the users location, browsing history, browsing behavior, tag selection and the browsing history of their friends affect which events are highlighted .<br>
+			<p style="font-family:Vollkorn,sans-serif; font-size:20px;">
+			HoppIn is a mobile-first redefining event discovery, networking and booking platform .Users are presented with a curated list of things to do ,including last minute events, which can be booked directly on the App.<br><br>
+It is the element of curation, highlighting different events for each user that can be booked, from a few hours away, to months in advance .<br><br>
+It has full coverage and a large range, but highlights the very best up front .The absence of too much choice makes the consumer buy more rather than less.If you have 100 events you would be less likely to go to one because you would overwhelmed by choice .<br><br>
+Events are selected by hand and advanced personalized algorithms .Things like Facebook likes, the users location, browsing history, browsing behavior, tag selection and the browsing history of their friends affect which events are highlighted .<br><br>
 
 			</p>
 			</div>
@@ -420,7 +350,7 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 			</div>
 			<div class="col-md-6">
 			<br><br>
-			<p class="wow fadeInRight">
+			<p class="wow fadeInRight" style="font-size:20px; font-family:Vollkorn,sans-serif;">
 			•	Notifications product to ensure every customer communication is as tailored as the set of events they curate in the App<br>
 •	Notifications to drive engagement in the powerful way<br><br>
 •	More targeted and tailored interventions and initiatives for maximum impact<br> <br>
@@ -662,7 +592,13 @@ Events are selected by hand and advanced personalized algorithms .Things like Fa
 		 </div>
 		</div>
 	</div>
+	</main>
+
+<!-- //header -->
+<!-- banner -->
 	
+	<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script>
 <!-- //footer -->
 </body>
 </html>
